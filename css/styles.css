@@ -1,0 +1,7 @@
+/*значения для свойства box-sizing*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Остальной код */

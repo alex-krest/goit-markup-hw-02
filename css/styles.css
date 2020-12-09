@@ -1,7 +1,118 @@
-/*значения для свойства box-sizing*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-/* Остальной код */
+/*-----------Переменные цвета---*/
+:root {
+  --accent-color: #2196f3;
+  --text-color: #757575;
+  --basic-color: #212121;
+  --active-color: #ffffff;}
+/*-шрифт на все кроме ссылок и кнопок*/
+body {
+  font-family: Roboto; sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-align: left;}
+/*убираем декор у ссылок и у списков*/
+a {text-decoration: none;
+color: var(--basic-color);}
+li{list-style-type: none;}
+/* ---ШАПКА--почему-то не работает фокус--*/
+.logo{font-family: Raleway; sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.192;
+letter-spacing: 0.03em;
+color:  #000000;}
+.logo-footer{
+font-family: Raleway; sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.192;
+letter-spacing: 0.03em;
+/*color:var(--active-color);*/}
+span {color:var(--accent-color)}
+.nav:hover,
+.nav:focus{color:var(--accent-color);}
+.nav-mail,
+.nav-phone{font-style: normal;
+color:var(--text-color);}
+.nav-mail:hover{color:var(--accent-color);}
+.nav-mail:focus{color:var(--accent-color);}
+.nav-phone:hover{color:var(--accent-color);}
+.nav-phone:focus{color:var(--accent-color);}
+       /*--секция 1 ГЕРОЙ--*/
+.hero-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.363;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+/*color:var(--active-color)*/}
+ .btn-hero{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color:var(--active-color);
+background-color:var(--accent-color);}
+/*--секция 2 список--*/
+.list-caption{
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:var(--basic-color);}
+.list-text{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color:var(--text-color);}
+/*--секция 3,4 --*/
+.work-caption,.command-caption {
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.166;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--basic-color);}
+.command-subject{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.187;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--basic-color);}
+.command-text{
+font-style: normal;
+font-weight: 400l;
+font-size: 16px;
+line-height: 1.187;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--text-color);}
+/*--footer--*/
+.text-footer{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+/*color: var(--active-color);*/}
+.footer-mail, .footer-phone{
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+/*color: rgba(255, 255, 255, 0.6);*/}
+
